@@ -1,0 +1,46 @@
+// Import abstracts
+@import "./scss/functions";
+@import "./scss/variables";
+
+$new-primary: #7153fa;
+
+$new-theme-colors: (
+  "primary": $new-primary
+);
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+@import "./scss/bootstrap.scss";
+.navbar {
+  border-bottom: 3px solid #7c3aed;
+}
+.navbar-brand img {
+  width: 40px;
+}
+.navbar-nav .nav-link {
+  color: #000;
+}
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.notification-icon {
+  background-color: #f8f9fa;
+  padding: 8px;
+  border-radius: 50%;
+  position: relative;
+}
+.notification-icon .dot {
+  height: 10px;
+  width: 10px;
+  background-color: #7c3aed;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.menu-icon {
+  background-color: #f8f9fa;
+  padding: 8px;
+  border-radius: 50%;
+}

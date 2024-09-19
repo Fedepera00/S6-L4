@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./custom-bootstrap.css" />
+
+    <title>Online Courses</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./screenassets/assets/logo.svg" alt="Logo" />
+        </a>
+
+        <!-- Right side icons -->
+        <div class="d-flex align-items-center">
+          <!-- Notification icon -->
+          <div class="notification-icon me-3 position-relative">
+            <i class="bi bi-bell"></i>
+            <span class="dot"></span>
+          </div>
+
+          <!-- Profile image -->
+          <div class="me-3">
+            <img src="./screenassets/assets/avatar-1.jpg" alt="Profile" class="profile-img" />
+          </div>
+
+          <!-- Menu icon -->
+          <div class="menu-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+            <i class="bi bi-list" style="font-size: 24px"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-unstyled">
+          <li class="mb-3"><i class="bi bi-grid me-2"></i> Browse</li>
+          <li class="mb-3"><i class="bi bi-layout-sidebar me-2"></i> Landings</li>
+          <li class="mb-3"><i class="bi bi-file-earmark-text me-2"></i> Pages</li>
+          <li><i class="bi bi-person-circle me-2"></i> Accounts</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="container text-center py-5">
+      <h1 class="mb-3">Welcome Web Students!</h1>
+      <p>Hand-picked Instructor and expertly crafted courses, designed for the modern students and entrepreneur.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <button class="btn btn-success me-md-2" type="button">Browse Courses</button>
+        <button class="btn btn-outline-primary" type="button">Are You Instructor?</button>
+      </div>
+    </div>
+
+    <!-- Avatar Image -->
+    <div class="text-center bg-primary my-5">
+      <img src="./screenassets/assets/hero-img.png" alt="Avatar" class="rounded-circle" width="450" />
+    </div>
+
+    <!-- 30,000 Online Courses Section -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex align-items-center">
+            <i class="bi bi-journal-code" style="font-size: 2rem"></i>
+            <div class="ms-3">
+              <h5>30,000 online courses</h5>
+              <p class="mb-0">Lifetime access</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommended to You Section -->
+    <div class="container my-5">
+      <h3 class="mb-4">Recommended to you</h3>
+      <div id="recommendedCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-6">
+                <div class="card">
+                  <img src="./screenassets/assets/course-graphql.jpg" class="card-img-top" alt="GraphQL" />
+                  <div class="card-body">
+                    <h5 class="card-title">GraphQL: introduction for beginners</h5>
+                    <p class="card-text">2h 40m, Advance</p>
+                    <p class="text-muted"><s>$600</s> $500</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img src="./screenassets/assets/course-javascript.jpg" class="card-img-top" alt="JavaScript" />
+                  <div class="card-body">
+                    <h5 class="card-title">A Complete Beginner's Guide to JavaScript</h5>
+                    <p class="card-text">4h 10m, Advance</p>
+                    <p class="text-muted"><s>$700</s> $600</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-6">
+                <div class="card">
+                  <img src="./screenassets/assets/course-node.jpg" class="card-img-top" alt="NODE JS" />
+                  <div class="card-body">
+                    <h5 class="card-title">HTML Full Course - Build a Website Tutorial</h5>
+                    <p class="card-text">3h 16m, Beginner</p>
+                    <p class="text-muted"><s>$700</s> $550</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img src="./screenassets/assets/course-laravel.jpg" class="card-img-top" alt="LARAVEL" />
+                  <div class="card-body">
+                    <h5 class="card-title">Angular Advanced</h5>
+                    <p class="card-text">5h 10m, Intermediate</p>
+                    <p class="text-muted"><s>$800</s> $650</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#recommendedCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#recommendedCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Most Popular Section  -->
+    <div class="container my-5">
+      <h3 class="mb-4">Recommended to you</h3>
+      <div id="recommendedCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-6">
+                <div class="card">
+                  <img src="./screenassets/assets/course-html.jpg" class="card-img-top" alt="HTML" />
+                  <div class="card-body">
+                    <h5 class="card-title">GraphQL: introduction for beginners</h5>
+                    <p class="card-text">2h 40m, Advance</p>
+                    <p class="text-muted"><s>$600</s> $500</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img src="./screenassets/assets/course-javascript.jpg" class="card-img-top" alt="JavaScript" />
+                  <div class="card-body">
+                    <h5 class="card-title">A Complete Beginner's Guide to JavaScript</h5>
+                    <p class="card-text">4h 10m, Advance</p>
+                    <p class="text-muted"><s>$700</s> $600</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-6">
+                <div class="card">
+                  <img src="./screenassets/assets/course-node.jpg" class="card-img-top" alt="NODE JS" />
+                  <div class="card-body">
+                    <h5 class="card-title">HTML Full Course - Build a Website Tutorial</h5>
+                    <p class="card-text">3h 16m, Beginner</p>
+                    <p class="text-muted"><s>$700</s> $550</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img src="./screenassets/assets/course-react.jpg" class="card-img-top" alt="REACT" />
+                  <div class="card-body">
+                    <h5 class="card-title">Angular Advanced</h5>
+                    <p class="card-text">5h 10m, Intermediate</p>
+                    <p class="text-muted"><s>$800</s> $650</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#recommendedCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#recommendedCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Trending Section  -->
+    <div class="container my-5">
+      <h3 class="mb-4">Recommended to you</h3>
+      <div id="recommendedCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-6">
+                <div class="card">
+                  <img src="./screenassets/assets/course-gatsby.jpg" class="card-img-top" alt="GATSBY" />
+                  <div class="card-body">
+                    <h5 class="card-title">GraphQL: introduction for beginners</h5>
+                    <p class="card-text">2h 40m, Advance</p>
+                    <p class="text-muted"><s>$600</s> $500</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img src="./screenassets/assets/course-html.jpg" class="card-img-top" alt="HTML" />
+                  <div class="card-body">
+                    <h5 class="card-title">A Complete Beginner's Guide to JavaScript</h5>
+                    <p class="card-text">4h 10m, Advance</p>
+                    <p class="text-muted"><s>$700</s> $600</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-6">
+                <div class="card">
+                  <img src="./screenassets/assets/course-node.jpg" class="card-img-top" alt="NODE JS" />
+                  <div class="card-body">
+                    <h5 class="card-title">HTML Full Course - Build a Website Tutorial</h5>
+                    <p class="card-text">3h 16m, Beginner</p>
+                    <p class="text-muted"><s>$700</s> $550</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img src="./screenassets/assets/course-laravel.jpg" class="card-img-top" alt="LARAVEL" />
+                  <div class="card-body">
+                    <h5 class="card-title">Angular Advanced</h5>
+                    <p class="card-text">5h 10m, Intermediate</p>
+                    <p class="text-muted"><s>$800</s> $650</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#recommendedCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#recommendedCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center py-4">
+      <p>© 2022 Geeks. All Rights Reserved.</p>
+      <div>
+        <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Feedback</a> |
+        <a href="#">Support</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
